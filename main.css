@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+:root {
+    --mainColor: #353535;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.mainPage {
+    height: 100%;
+    width: 100%;
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    font-size: 150px;
+    font-weight: bolder;
+    padding: 20px 80px;
+    background-color: var(--mainColor);
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.button:hover {
+    cursor: grab;
+    transform: translate(26px, -26px);
+    box-shadow: -2px 2px 1px #222222,
+        -4px 4px 1px #222222,
+        -6px 6px 1px #222222,
+        -8px 8px 1px #222222,
+        -11px 11px 1px #222222,
+        -12px 12px 1px #222222,
+        -16px 16px 1px #222222,
+        -18px 18px 1px #222222,
+        -22px 22px 1px #222222,
+        -24px 24px 1px #222222,
+        -26px 26px 1px #222222,
+        -28px 28px 0px 20px white,
+        -30px 30px 0px 20px #DDDDDD,
+        -32px 32px 0px 20px #DDDDDD,
+        -34px 34px 0px 20px #DDDDDD,
+        -36px 36px 0px 20px #DDDDDD,
+        -38px 38px 0px 20px #DDDDDD,
+        -42px 42px 0px 20px #DDDDDD,
+        -46px 46px 15px 40px black;
+    border: none;
+    border: 2px solid #222222;
+}
+
+.button:active {
+    transform: translate(0px, 0px);
+    box-shadow: 0px 0px 1px #222222,
+        0px 0px 1px #222222,
+        0px 0px 1px #222222,
+        0px 0px 1px #222222,
+        0px 0px 1px #222222,
+        0px 0px 1px #222222,
+        0px 0px 1px #222222,
+        0px 0px 1px #222222,
+        0px 0px 1px #222222,
+        0px 0px 1px #222222,
+        0px 0px 1px #222222,
+        -2px 2px 0px 20px white,
+        -4px 4px 0px 20px #DDDDDD,
+        -6px 6px 0px 20px #DDDDDD,
+        -8px 8px 0px 20px #DDDDDD,
+        -10px 10px 0px 20px #DDDDDD,
+        -12px 12px 0px 20px #DDDDDD,
+        -16px 16px 0px 20px #DDDDDD,
+        -20px 20px 15px 40px black
+        ;
+}
+
+.buttonContent {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .2s;
+}
+
+.button:hover .buttonContent {
+    transform: translate(16px, -16px);
+    color: aqua;
+    text-shadow: -2px 2px 2px #01bdbd,
+        -4px 4px 2px #01bdbd,
+        -6px 6px 2px #01bdbd,
+        -8px 8px 2px #01bdbd,
+        -10px 10px 2px #01bdbd,
+        -12px 12px 2px #01bdbd,
+        -14px 14px 2px #01bdbd,
+        -16px 16px 5px #006b6b;
+    transition-delay: .2s;
+}
+
+.button:active .buttonContent {
+    transform: translate(0px, 0px);
+    text-shadow: unset;
+    transition-delay: 0 !important;
+}
